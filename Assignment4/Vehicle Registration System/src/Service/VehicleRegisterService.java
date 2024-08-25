@@ -10,12 +10,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class VehicleRegisterService {
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    String brand;
-    String model;
-    String type;
-    String flag;
-    Vehicle[] vehicleList = new Vehicle[100];
+    private BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    private String brand;
+    private String model;
+    private String type;
+    private String flag;
+    private Vehicle[] vehicleList = new Vehicle[100];
 
     public void getVehicleInfo() throws IOException {
         do {
