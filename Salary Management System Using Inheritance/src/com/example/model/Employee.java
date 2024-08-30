@@ -1,10 +1,12 @@
+package com.example.model;
+
 public class Employee {
     private String name;
     private int employeeId;
     private double basicSalary;
     private static int employeeCount;
 
-    Employee(String name, int id, double salary){
+    public Employee(String name, int id, double salary){
         this.name = name;
         this.employeeId = id;
         this.basicSalary = salary;
