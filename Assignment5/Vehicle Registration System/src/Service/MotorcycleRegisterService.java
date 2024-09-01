@@ -17,6 +17,6 @@ public class MotorcycleRegisterService extends VehicleRegisterService{
         } else {
             hasSideCar = false;
         }
-        VehicleRegisterService.getVehicleList()[Vehicle.getVehicleCount() - 1] = new Motorcycle(this.getVehicle(), hasSideCar);
+        setVehicle(new Motorcycle(this.getVehicle(), hasSideCar));
     }
 }

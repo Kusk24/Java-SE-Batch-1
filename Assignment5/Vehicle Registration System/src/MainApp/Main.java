@@ -28,11 +28,9 @@ public class Main {
             } else if (type.equalsIgnoreCase("Motorcycle")) {
                 service = new MotorcycleRegisterService();
             }
-            service.getCommonInfo();
-            service.getRegisterInfo();
+            service.createVehicle();
             System.out.print("Do you want to add another vehicle: (yes/no): ");
             flag = br.readLine();
-            System.out.println(Vehicle.getVehicleCount());
         } while(flag.equalsIgnoreCase("Yes"));;
         service.display();
     }

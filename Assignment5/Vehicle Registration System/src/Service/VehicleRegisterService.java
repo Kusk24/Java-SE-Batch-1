@@ -22,6 +22,12 @@ public class VehicleRegisterService {
         vehicle = new Vehicle(brand, model);
     }
 
+    public void createVehicle() throws IOException{
+        getCommonInfo();
+        getRegisterInfo();
+        vehicleList[Vehicle.getVehicleCount()-1] = vehicle;
+    }
+
     public Vehicle getVehicle() {
         return vehicle;
     }
@@ -39,5 +45,9 @@ public class VehicleRegisterService {
             VehicleRegisterService.getVehicleList()[i].displayInfo();
         }
         System.out.println();
+    }
+
+    public void setVehicle(Vehicle vehicle){
+        this.vehicle = vehicle;
     }
 }

@@ -13,6 +13,6 @@ public class TruckRegisterService extends VehicleRegisterService{
     public void getRegisterInfo() throws IOException {
         System.out.print("Enter payload Capacity of Truck : ");
         payloadCapacity = Integer.parseInt(br.readLine());
-        VehicleRegisterService.getVehicleList()[Vehicle.getVehicleCount() - 1] = new Truck(this.getVehicle(), this.payloadCapacity);
+        setVehicle(new Truck(this.getVehicle(), this.payloadCapacity));
     }
 }
