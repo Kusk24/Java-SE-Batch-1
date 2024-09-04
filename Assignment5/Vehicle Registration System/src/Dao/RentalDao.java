@@ -6,7 +6,7 @@ public class RentalDao {
     private static Rental[] RentalDB = new Rental[Rental.MAX_Rental_Count];
 
     public void create(Rental rental){
-
+        RentalDB[Rental.getRentalCount()-1] = rental;
     }
 
     public void delete(Rental rental){
